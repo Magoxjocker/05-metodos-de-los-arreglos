@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <title>Medotods de Arreglo</title>
+</head>
+
+<body>
+
+    <div class="card fondo" style="width: 72rem;">
+        <div class="container">
+            <h1 class="text-light text-center mt-2">Lista De Tareas</h1>
+            <hr>
+            <div class="row m-3">
+                <label for="exampleFormControlInput1" class="form-label text-light fw-bold">Nuevas Tareas</label>
+                <div class="cool-10">
+                    <input type="text" class="form-control" id="inputTask" placeholder="">
+                </div>
+                <div class="cool-2">
+                    <button id="add-task" type="submit" class="btn btn-success m-2">Agregar</button>
+                </div>
+            </div>
+
+            <div class="row m-3">
+                <div class="cool-6">
+                    <p class="text-light fw-bold">Total: <span id="total">0</span></p>
+                    <p class="text-light fw-bold">Realizadas: <span id="realizadas">0</span></p>
+                </div>
+                <div class="cool-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="text-light fw-bold" scope="col">ID</th>
+                                <th class="text-light fw-bold" scope="col">Tarea</th>
+                                <th class="text-light fw-bold" scope="col">Completada</th>
+                                <th class="text-light fw-bold" scope="col">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tasks">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/scrip.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
